@@ -17,7 +17,7 @@ export default async function Product({ params }: { params: { productId: string 
             <div className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">
               Electronics {productId}
             </div>
-            <h2 className="mt-1 text-2xl font-bold text-gray-900">Wireless Headphones</h2>
+            <h2 className="mt-1 text-2xl font-bold text-gray-900">Wireless Electronics</h2>
             <p className="mt-2 text-gray-600">
               High-quality noise-canceling headphones with an immersive sound experience.
             </p>
