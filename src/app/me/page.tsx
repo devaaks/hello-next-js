@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const ProfilePage = () => {
   // Static data
   const user = {
@@ -24,7 +26,7 @@ const ProfilePage = () => {
         {/* Profile Header */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-8">
           <div className="flex items-center flex-col md:flex-row">
-            <img 
+            <Image 
               className="h-32 w-32 rounded-full object-cover mb-4 md:mb-0 md:mr-8"
               src={user.avatar}
               alt={user.name}

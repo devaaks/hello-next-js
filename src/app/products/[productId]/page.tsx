@@ -1,11 +1,13 @@
-export default async function Product({ params }: { params: { productId: string } }) {
+import Image from 'next/image';
+
+export default async function Product({ params }: { params: Promise<{ productId: string }> }) {
     const { productId } = await params;
     return (
       <div className="flex justify-center items-center min-h-screen p-4">
         <div className="max-w-2xl bg-white rounded-lg shadow-md overflow-hidden md:flex">
           {/* Product Image */}
           <div className="md:flex-shrink-0">
-            <img
+            <Image
               className="h-64 w-full object-cover md:h-full md:w-64"
               src="/product.png"
               alt="Product Image"

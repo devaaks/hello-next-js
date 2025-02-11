@@ -1,5 +1,5 @@
-export default async function Review({ params }: { params: { reviewId: string } }) {
-    const { reviewId } = await params;
+export default async function Review({ params }: { params: Promise<{ reviewId: string }> }) {
+  const { reviewId } = await params;
   return (
     <div className="container mx-auto">
       <div className="flex justify-center items-center h-screen">
@@ -10,4 +10,4 @@ export default async function Review({ params }: { params: { reviewId: string } 
       </div>
     </div>
   )
-}`  `
+}
