@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 const ProfilePage = () => {
-  // Static data
   const user = {
     name: 'Ashish Singh',
     title: 'Senior Software Engineer',
@@ -14,6 +13,7 @@ const ProfilePage = () => {
     skills: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'Docker', 'GraphQL', 'PostgreSQL'],
     avatar: '/ninja.jpg', // Replace with your image path
     blogPosts: [
+      { title: 'JS Ninja', date: '2023-02-10', readTime: '12 min' },
       { title: 'Mastering React Hooks', date: '2023-03-15', readTime: '8 min' },
       { title: 'AWS Best Practices', date: '2023-02-28', readTime: '10 min' },
       { title: 'TypeScript Tips and Tricks', date: '2023-02-10', readTime: '6 min' },
