@@ -1,3 +1,4 @@
+"use client"
 import useCurrentUser from '@/hooks/useCurrentProfile';
 import Image from 'next/image';
 
