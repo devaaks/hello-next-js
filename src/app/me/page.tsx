@@ -15,6 +15,8 @@ const ProfilePage = () => {
               className="h-32 w-32 rounded-full object-cover mb-4 md:mb-0 md:mr-8"
               src={user.avatar}
               alt={user.name}
+              width={60}
+              height={60}
             />
             <div className="text-center md:text-left">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{user.name}</h1>
