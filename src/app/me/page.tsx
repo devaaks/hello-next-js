@@ -1,24 +1,8 @@
+import useCurrentUser from '@/hooks/useCurrentProfile';
 import Image from 'next/image';
 
 const ProfilePage = () => {
-  const user = {
-    name: 'Ashish Singh',
-    title: 'Senior Software Engineer',
-    location: 'Ottawa, Canada',
-    email: 'sarah.anderson@example.com',
-    website: 'https://sarah-anderson.dev',
-    github: 'sarah-anderson',
-    twitter: 'sarah_anderson',
-    bio: 'Passionate full-stack developer with 9+ years of experience building scalable web applications. Specializing in React, Node.js, and cloud technologies. Open source contributor and tech community advocate.',
-    skills: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'Docker', 'GraphQL', 'PostgreSQL'],
-    avatar: '/ninja.jpg', // Replace with your image path
-    blogPosts: [
-      { title: 'JS Ninja', date: '2023-02-10', readTime: '12 min' },
-      { title: 'Mastering React Hooks', date: '2023-03-15', readTime: '8 min' },
-      { title: 'AWS Best Practices', date: '2023-02-28', readTime: '10 min' },
-      { title: 'TypeScript Tips and Tricks', date: '2023-02-10', readTime: '6 min' },
-    ]
-  }
+  const user = useCurrentUser();
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
