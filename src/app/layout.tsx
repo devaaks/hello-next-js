@@ -24,10 +24,69 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+      </body> */}
+      {/* header */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex flex-col min-h-screen">
+          <header className="shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-16">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    {/* Page title */}
+                    <h1 className="text-2xl font-bold text-blue-500">
+                      NextJS
+                    </h1>
+                  </div>
+                  <div className="hidden md:block">
+                    <div className="ml-10 flex items-baseline space-x-4">
+                      <a
+                        href="#"
+                        className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-700"
+                      >
+                        Dashboard
+                      </a>
+                      <a
+                        href="#"
+                        className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-blue-700"
+                      >
+                        Team
+                      </a>
+                      <a
+                        href="#"
+                        className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-700"
+                      >
+                        Projects
+                      </a>
+                      <a
+                        href="#"
+                        className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-700"
+                      >
+                        Calendar
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          {children}
+          <footer className="bg-white">
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+              <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div className="space-y-8 xl:col-span-1">
+                  <p className="text-gray-500 text-sm">
+                    &copy; 2023 NextJS. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>  
       </body>
     </html>
   );
