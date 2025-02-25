@@ -1,6 +1,10 @@
 export default async function Docs({ params }: { params: Promise<{ slug: string[] }> }) {
+
+  // Simulate a delay to show the loading spinner
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
   const { slug } = await params;
-  console.log({ slug });
+  
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-4xl mx-auto p-10 rounded shadow">
